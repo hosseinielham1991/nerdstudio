@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --activecolor: #9373ee;
+  --backgroundcolorSide: #FCFCFD;
+  --backgroundcolorDefault: #fff;
+  --heightMenu: 80px;
+  --borderColor:#EFEFEF;
+  --secondaryColor:#747474;
+  --primaryColor:#181818;
+  --hoverBackground:#F8F8F8;
+  --hoverActive1:rgba(242, 238, 253, 1);
+  --hoverActive0:rgba(242, 238, 253, 0);
+
+}
+
+html,body{
+    font-size: 14px;
+}

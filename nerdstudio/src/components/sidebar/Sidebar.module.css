@@ -1,0 +1,19 @@
+.header {
+  height: var(--heightMenu);
+  max-height: var(--heightMenu);
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.logoTitle {
+  font-size: 1.714rem;
+  font-weight: bold; /* Adjust as needed */
+  background: linear-gradient(114.44deg, #4d84ff 0%, #de8fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* Ensure text color is not applied */
+}
+
+.main {
+  background-color: var(--backgroundcolorSide);
+}
