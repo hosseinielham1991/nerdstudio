@@ -1,5 +1,5 @@
 import "./globals.css";
-import MainContent from "../components/MainContent.js";
+import MainContent from "../components/MainContent/MainContent.js";
 import Sidebar from "../components/sidebar/Sidebar.js";
 import { Inter } from "next/font/google";
 

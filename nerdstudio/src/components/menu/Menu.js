@@ -17,14 +17,13 @@ const Menu = ({ items }) => {
             <li
               key={index}
               className={
-                `flex items-center p-4 hover:bg-hover ${styles.item} ${currentPath === '/'+(item.title.toLowerCase()) ? styles.active : ''} `  
+                `flex items-center p-4 hover:bg-hover h-50 ${currentPath === '/'+(item.title.toLowerCase()) ? styles.active : ''} `  
               }
             >
               <Link href={item.href} className="flex items-center">
                 {IconComponent && (
                   <IconComponent
-                    size={24}
-                    className="mr-2 text-gray-600 text-secondary"
+                    className="mr-2 text-gray-600 text-secondary text-icon"
                   />
                 )}
                 <span className="text-gray-800  text-secondary">

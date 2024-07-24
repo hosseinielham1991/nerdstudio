@@ -4,18 +4,20 @@
 
 :root {
   --activecolor: #9373ee;
-  --backgroundcolorSide: #FCFCFD;
-  --backgroundcolorDefault: #fff;
+  --backgroundcolor: #fff;
+  --backgroundcolorSecondary: #fcfcfd;
   --heightMenu: 80px;
-  --borderColor:#EFEFEF;
-  --secondaryColor:#747474;
-  --primaryColor:#181818;
-  --hoverBackground:#F8F8F8;
-  --hoverActive1:rgba(242, 238, 253, 1);
-  --hoverActive0:rgba(242, 238, 253, 0);
-
+  --borderColor: #efefef;
+  --secondaryColor: #747474;
+  --primaryColor: #181818;
+  --hoverBackground: #f8f8f8;
+  --hoverActive1: rgba(242, 238, 253, 1);
+  --hoverActive0: rgba(242, 238, 253, 0);
 }
 
-html,body{
-    font-size: 14px;
+html,
+body {
+  font-size: 14px;
+  background-color: var(--backgroundcolor);
+  color: var(--primaryColor);
 }

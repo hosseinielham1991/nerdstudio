@@ -1,8 +1,4 @@
-.header {
-  height: var(--heightMenu);
-  max-height: var(--heightMenu);
-  border-bottom: 1px solid var(--borderColor);
-}
+
 
 .logoTitle {
   font-size: 1.714rem;
@@ -15,5 +11,6 @@
 }
 
 .main {
-  background-color: var(--backgroundcolorSide);
+  background-color: var(--backgroundcolorDefault);
+
 }

@@ -1,0 +1,7 @@
+.active{
+    background-color:  var(--hoverActive1);
+}
+.active svg,
+.active span{
+    color:  var(--activecolor);
+}

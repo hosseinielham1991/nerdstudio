@@ -1,7 +1,8 @@
-.item{
-    height:50px;
-}
+
 
 .item.active{
     background: linear-gradient( to right, var(--activecolor) 3px,var(--hoverActive1) 3px, var(--hoverActive0) 100% );
+}
+.item.active svg{
+   color:var(--activecolor);
 }

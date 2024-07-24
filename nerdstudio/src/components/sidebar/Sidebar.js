@@ -1,5 +1,5 @@
 // Sidebar.js
-"use client"
+"use client";
 import React from "react";
 import { MdOutlineDashboard } from "react-icons/md";
 import { PiChatsLight } from "react-icons/pi";
@@ -9,25 +9,31 @@ import { TbTextGrammar } from "react-icons/tb";
 import { FaCode } from "react-icons/fa6";
 import styles from "./Sidebar.module.css";
 import Menu from "../menu/Menu";
+import Image from "next/image";
+import { CiCircleInfo } from "react-icons/ci";
+import { IoNotificationsOutline } from "react-icons/io5";
 import { MdOutlineCameraAlt } from "react-icons/md";
 const Sidebar = () => {
   const menuItems = [
-    { title: "Dashboard", icon: MdOutlineDashboard,href:'/dashboard' },
-    { title: "Chat", icon: PiChatsLight,href:'/chat'},
-    { title: "ReWrite", icon: TbWriting,href:'/chat'},
-    { title: "Images", icon: MdOutlineCameraAlt,href:'/chat'},
-    { title: "Translate", icon: MdTranslate,href:'/chat'},
-    { title: "Grammar", icon: TbTextGrammar,href:'/chat'},
-    { title: "Code", icon: FaCode,href:'/chat'},
+    { title: "Dashboard", icon: MdOutlineDashboard, href: "/dashboard" },
+    { title: "Chat", icon: PiChatsLight, href: "/chat" },
+    { title: "ReWrite", icon: TbWriting, href: "/rewrite" },
+    { title: "Images", icon: MdOutlineCameraAlt, href: "/images" },
+    { title: "Translate", icon: MdTranslate, href: "/translate" },
+    { title: "Grammar", icon: TbTextGrammar, href: "/grammar" },
+    { title: "Code", icon: FaCode, href: "/code" },
   ];
   return (
-    <aside className={styles.main + " w-20.43rem  flex flex-col"}>
+    <aside
+      className={
+        styles.main + " w-286  flex flex-col border-r border-colorline"
+      }
+    >
       {/* Top Section: Logo and Site Name */}
-      <div className="w-full flex items-center border-b border-gray-200">
+      <div className="w-full  flex items-center border-b border-colorline ">
         <div
           className={
-            "p-4 text-2xl w-full flex items-center font-bold text-gray-800 " +
-            styles.header
+            "p-4 h-80 text-2xl w-full flex items-center font-bold text-gray-800 "
           }
         >
           <svg
@@ -62,21 +68,29 @@ const Sidebar = () => {
       </div>
 
       {/* Middle Section: Menu */}
-      <div className="flex-1 overflow-y-auto ">
+      <div className="flex-1 overflow-y-auto scroll-smooth ">
         <Menu items={menuItems} />
       </div>
 
       {/* Bottom Section: User Info */}
-      <div className="p-4 border-t border-gray-200 flex items-center justify-between">
-        <div className="flex items-center">
-          <MdOutlineDashboard className="mr-2 text-gray-600" />
-          <span className="text-gray-800">User Namesdfsf</span>
-        </div>
-        <div className="flex items-center">
-          <MdOutlineDashboard className="text-gray-600 mr-4" />
-          <div className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center">
-            <MdOutlineDashboard className="text-gray-600" />
+      <div className=" h-80 p-4 border-t border-colorline flex items-center justify-between">
+        <div className="flex items-center w-full">
+          <Image
+            src="/images/user_img.jpg" // Path to the local image
+            alt="Local User"
+            width={50}
+            height={50}
+            className="h-50 w-50"
+            style={{ borderRadius: "50%" }} // Optional: make it round
+          />
+          <div className="flex flex-col pl-2 mr-4">
+            <span className="">Sara Moradi</span>
+            <span className="text-12 text-secondary">Lorem</span>
           </div>
+          <div className="flex-grow flex-shrink basis-0 justify-center flex"><IoNotificationsOutline className="text-icon text-gray-600" /></div>
+          <div className="flex-grow flex-shrink basis-0 justify-center flex"><CiCircleInfo className="text-icon text-gray-600 mr-4" /></div>
+          
+          
         </div>
       </div>
     </aside>
