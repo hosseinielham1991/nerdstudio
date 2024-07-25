@@ -1,6 +1,6 @@
 
 .holderHistory {
-    position: absolute;
+    position: fixed;
     height: calc(100% - var(--heightMenu));
     background-color: var(--backhistory);
     right: 0;
