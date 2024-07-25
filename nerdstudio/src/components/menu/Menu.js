@@ -17,7 +17,7 @@ const Menu = ({ items }) => {
             <li
               key={index}
               className={
-                `flex items-center p-4 hover:bg-hover h-50 ${currentPath === '/'+(item.title.toLowerCase()) ? styles.active : ''} `  
+                `flex items-center p-4 hover:bg-hover h-50 ${styles.item} ${currentPath === '/'+(item.title.toLowerCase()) ? styles.active : ''} `  
               }
             >
               <Link href={item.href} className="flex items-center">

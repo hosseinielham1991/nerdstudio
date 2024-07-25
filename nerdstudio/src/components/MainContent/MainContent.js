@@ -6,13 +6,14 @@ import { IoMenu } from "react-icons/io5";
 import { FiShare2 } from "react-icons/fi";
 import { TbHistory } from "react-icons/tb";
 import styles from "./MainContent.module.css";
+import History from "./component/history/History";
 const MainContent = ({ children }) => {
   const [historyActive, setHistoryActive] = useState(false);
 
   return (
     <main className="flex-1 flex flex-col">
       {/* Header */}
-      <div className="h-80 border-b border-colorline  bg-customgray p-36 flex items-center justify-between ">
+      <div className="h-80 border-b border-colorline  bg-customgray pl-36 pr-36 flex items-center justify-between ">
         <button className="text-secondary">
           {/* Toggle Sidebar Icon */}
           <IoMenu className="text-secondary text-icon" />
@@ -36,9 +37,15 @@ const MainContent = ({ children }) => {
           </button>
         </div>
       </div>
-
       {/* Content Below Header */}
-      <div className="flex-1 flex ">{children}</div>
+      <div
+        className={
+          "flex-1 flex flex-grow flex-shrink basis-0  " + styles.holderContent
+        }
+      >
+        <History show={historyActive} onclose={()=>{setHistoryActive(false)}}></History>
+        {children}
+      </div>
     </main>
   );
 };

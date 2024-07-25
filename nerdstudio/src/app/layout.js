@@ -1,9 +1,12 @@
 import "./globals.css";
 import MainContent from "../components/MainContent/MainContent.js";
 import Sidebar from "../components/sidebar/Sidebar.js";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
-      <body className={inter.className + " h-full"}>
+      <body
+        style={{
+          fontFamily: dmSans.style.fontFamily.split(",")[0] + "!important",
+        }}
+        className={dmSans.className + " h-full"}
+      >
         <div className="flex h-full">
           <Sidebar></Sidebar>
           <MainContent>{children}</MainContent>

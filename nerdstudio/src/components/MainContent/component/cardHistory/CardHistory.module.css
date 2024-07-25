@@ -1,0 +1,10 @@
+.main{
+    height:5.2rem;
+    background-color: var(--backgroundcolor);
+}
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

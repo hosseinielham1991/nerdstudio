@@ -1,3 +1,12 @@
+
+html,
+body {
+  font-size: 14px;
+  background-color: var(--backgroundcolor);
+  color: var(--primaryColor);
+  overflow: hidden;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,11 +22,38 @@
   --hoverBackground: #f8f8f8;
   --hoverActive1: rgba(242, 238, 253, 1);
   --hoverActive0: rgba(242, 238, 253, 0);
+  --backhistory:#F8F8F8;
+  --muteColor:#B9BAC0;
 }
 
-html,
-body {
-  font-size: 14px;
-  background-color: var(--backgroundcolor);
-  color: var(--primaryColor);
+.ant-input-filled:focus-within {
+  border: 1px solid var(--primaryColor);
+}
+
+.ant-select-focused .ant-select-selector {
+  border: 1px solid var(--primaryColor) !important;
+}
+
+.ant-select-selector {
+  height: 2.857rem !important; /* Set your desired height here */
+  padding: 0 11px; /* Adjust padding if needed to fit the height */
+  font-size: 14px; /* Optional: Adjust font size */
+}
+
+/* Optional: Style for input in focused state */
+.ant-select {
+  height: 2.857rem !important; /* Set your desired height here */
+  max-height:  2.857rem!important;
+}
+.ant-select-arrow {
+  top: 50% !important;
+}
+
+.ant-btn-primary{
+  height:2.700rem !important; 
+}
+
+
+.ant-select-selection-item  .CustomSelectCheckMark{
+  visibility: hidden;
 }

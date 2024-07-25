@@ -14,7 +14,10 @@ module.exports = {
       },
       fontSize: {
         icon: "1.714rem",
-        12:'0.857rem'
+        12:'0.857rem',
+        10:'0.7rem',
+        36:'3rem',
+        18:'1.2857rem'
       },
       width: {
         "286": "20.43rem",
@@ -23,6 +26,7 @@ module.exports = {
       },
       padding: {
         '36': "2.571rem",
+        '17': "1.270rem",
       },
       colors: {
         secondary: "var(--secondaryColor)",
@@ -30,6 +34,8 @@ module.exports = {
         hover: "var(--hoverBackground)",
         customgray: "var(--backgroundcolorSecondary)",
         colorline: "var(--borderColor)",
+        active:"var(--activecolor)",
+        mute:"var(--muteColor)"
       },
       height: {
         '80': "5.714rem",
@@ -38,6 +44,9 @@ module.exports = {
       },
       borderRadius: {
         '8': '8px', // Define a custom border radius
+      },
+      fontFamily: {
+        'sans': [''], // Change or remove this if needed
       },
     },
   },

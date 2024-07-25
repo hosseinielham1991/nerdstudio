@@ -1,7 +1,11 @@
-.active{
-    background-color:  var(--hoverActive1);
+.active {
+  background-color: var(--hoverActive1);
 }
 .active svg,
-.active span{
-    color:  var(--activecolor);
+.active span {
+  color: var(--activecolor);
+}
+
+.holderContent {
+  height: calc(100% - var(--heightMenu));
 }

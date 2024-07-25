@@ -1,0 +1,31 @@
+
+.holderHistory {
+    position: absolute;
+    height: calc(100% - var(--heightMenu));
+    background-color: var(--backhistory);
+    right: 0;
+    width:24.375rem;
+    right: calc(-24.375rem - 20px);
+    overflow-y: auto;
+    transition: right 0.5s ease-in-out; 
+  }
+  .holderHistory.show {
+      right: 0;
+  }
+  .holderInputSearch{
+    height: 2.857rem !important;
+    background-color: var(--backgroundcolor);
+    width:80%;
+}
+
+  .inputSearch{
+    border: 0px!important;
+    box-shadow: unset!important;
+    outline: 0px solid transparent; 
+    height:2.857rem !important;
+}
+
+.closeBtn{
+    min-width:4rem;
+}
+ 
