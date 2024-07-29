@@ -1,0 +1,24 @@
+.holderCode {
+  position: relative;
+}
+
+.holderCode pre {
+  margin: 0px !important;
+  border-start-end-radius: 0 !important;
+  border-start-start-radius: 0 !important;
+}
+
+.holderHeader {
+  padding: 10px;
+  background: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+  border-radius: 5px 5px 0px 0px;
+  font-weight: bold;
+}
+
+.btnCopy {
+  padding: 5px 10px;
+  border: medium;
+  border-radius: 5px;
+  cursor: pointer;
+}
